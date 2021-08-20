@@ -54,3 +54,24 @@ $ npm run build
 
 For build options check the "pkg"-section inside the [package.json](package.json) file and 
 the pkg documentation [https://github.com/vercel/pkg](https://github.com/vercel/pkg).
+
+### resource consumption statistics
+
+Tested with apache jmeter v5.4.1, **1000 threads, 1 secs ramp-up, 3 seconds duration**.  
+During this simple test **no** request left unanswered, so there is no need to count those.  
+
+processor and ram usage report:  
+**mac:** activity monitor reporting.
+
+| runtime | os | state | ram | cpu% (1core) | avg response time |
+| --- | --- | --- | --- | --- | --- |
+| **mac** | - | - | - | - | - |
+| nodejs | mac | idle | ~25MB | 0,00% | / |
+| nodejs | mac | load | ~56MB | ~23,00% | 155ms |
+| pkg bytecode | mac (pkg) | idle | ~22MB | 0,00% | / |
+| pkg bytecode | mac (pkg) | load | ~60MB | ~28,00% | 9ms |
+| **windows** | - | - | - | - | - |
+| nodejs | win | idle | n.a. | n.a. | / |
+| nodejs | win | load | n.a. | n.a. | n.a. |
+| pkg bytecode | win | idle | n.a. | n.a. | / |
+| pkg bytecode | win | load | n.a. | n.a. | n.a. |

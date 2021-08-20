@@ -29,5 +29,5 @@ server.all('/shutdown', (_, res) => res.status(200).end('bye') && process.exit(0
 server.all('*', (_, res) => res.status(200).sendFile(indexFile));
 // start server and listen on port x
 server.listen(port);
-process.stdout.write(`[INFO] server listing on port ${port}\n`)
-process.stdout.write(`[INFO] startup completed in ${Date.now() - startTime}ms\n`)
+process.stdout.write(`[INFO] server listing on port ${port} on pid: ${process.pid}\n`);
+process.stdout.write(`[INFO] startup completed in ${Date.now() - startTime}ms\n`);
