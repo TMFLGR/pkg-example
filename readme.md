@@ -3,6 +3,14 @@
 This repository is a test to package a **simple Node.js Webserver** into a **single executable**
 that can be run even on devices without Node.js installed.
 
+- [usage](#usage)
+- [process args](#process-args)
+- [http endpoints](#http-endpoints)
+- [builds](#builds)
+- [build from source](#build-from-source)
+- [resource consumption statistics](#resource-consumption-statistics)
+
+
 ### usage
 
 ```bash
