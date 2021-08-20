@@ -1,0 +1,5 @@
+.idea
+node_modules
+
+# YES WE DO NOT EXCLUDE DIST FOR DEMO PURPOSE!!!
+# dist
