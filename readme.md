@@ -79,7 +79,7 @@ processor and ram usage report:
 | pkg bytecode | mac (pkg) | idle | ~22MB | 0,00% | / |
 | pkg bytecode | mac (pkg) | load | ~60MB | ~28,00% | 9ms |
 | **windows** | - | - | - | - | - |
-| nodejs | win | idle | n.a. | n.a. | / |
-| nodejs | win | load | n.a. | n.a. | n.a. |
-| pkg bytecode | win | idle | n.a. | n.a. | / |
-| pkg bytecode | win | load | n.a. | n.a. | n.a. |
+| nodejs | win | idle |  ~30MB | 0,00% | / |
+| nodejs | win | load | ~60MB | 30,00% | 172ms |
+| pkg bytecode | win | idle | ~28MB | 0,00%  | / |
+| pkg bytecode | win | load | ~60MB | ~33,00% | 15ms |
